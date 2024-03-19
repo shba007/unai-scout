@@ -1,0 +1,26 @@
+{
+	"manifest_version": 3,
+	"name": "Data Fetcher",
+	"description": "Data Fetcher Fetches Data from the web",
+	"version": "0.0.0",
+	"icons": {
+		"512": "icon.png"
+	},
+	"permissions": [
+		"activeTab",
+		"scripting"
+	],
+	"host_permissions": [
+		"http://*/*",
+		"https://*/*"
+	],
+	"action": {
+		"default_popup": "index.html",
+		"default_icon": {
+			"512": "icon.png"
+		}
+	},
+	"background": {
+		"service_worker": "background.js"
+	}
+}
