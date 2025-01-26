@@ -29,5 +29,10 @@ def show_stars(github_repos: list[str]):
         print(f"{repo}: {stars} stars")
 
 
-if __name__ == "__main__":
+@flow
+def main():
     show_stars(["PrefectHQ/prefect", "pydantic/pydantic", "huggingface/transformers"])
+
+
+if __name__ == "__main__":
+    main.serve(name="my-first-deployment", cron="* * * * *")
