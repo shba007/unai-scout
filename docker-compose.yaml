@@ -1,0 +1,17 @@
+name: unai-scout
+services:
+  postgres:
+    container_name: prefect-postgres
+    image: postgres:latest
+    volumes:
+      - prefectdb:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=yourTopSecretPassword
+      - POSTGRES_DB=prefect
+volumes:
+  prefectdb:
+    external: true
+    name: prefectdb

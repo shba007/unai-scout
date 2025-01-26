@@ -1,0 +1,17 @@
+# Python dependencies
+__pycache__
+.ruff_cache
+.venv
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Env files
+.env*
+!.env.example

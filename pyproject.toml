@@ -1,0 +1,21 @@
+[project]
+name = "unai-scout"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "prefect[docker]>=3.1.14",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.8.5",
+    "taskipy>=1.14.1",
+]
+
+[tool.taskipy.tasks]
+dev = "python src/main.py"
+lint = "ruff check --fix"
+format = "ruff format"
+preview = "prefect server start"
