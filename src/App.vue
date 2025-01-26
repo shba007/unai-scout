@@ -22,6 +22,7 @@ const activeTab = ref<'image' | 'audio' | 'video'>('image')
     <TabVideo v-else />
   </main>
 </template>
+
 <style>
 * {
   -webkit-font-smoothing: antialiased;
