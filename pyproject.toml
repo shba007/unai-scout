@@ -1,12 +1,17 @@
 [project]
 name = "unai-scout"
 version = "0.1.0"
-description = "Add your description here"
+description = "Data Scouting Service"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "beautifulsoup4>=4.12.3",
+    "instaloader>=4.14.1",
     "prefect[docker]>=3.1.14",
 ]
+
+[project.urls]
+Source = "https://github.com/shba007/unai-scout.git"
 
 [dependency-groups]
 dev = [

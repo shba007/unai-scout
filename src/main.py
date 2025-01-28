@@ -35,4 +35,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main.serve(name="my-first-deployment", cron="* * * * *")
+    main.serve(name="unai-scout", cron="* * * * *")
